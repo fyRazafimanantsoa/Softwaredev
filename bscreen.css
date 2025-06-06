@@ -1,0 +1,25 @@
+:root{
+    --background: #000000;
+    --text-color: #ffffff; 
+    --background2: #ffcc00;
+    --hover-text: #4444ff;
+    --hover-state: #1e1e1e;
+}
+
+body{
+    background-color: var(--background);
+    padding: 1rem;
+    color: var(--text-color);
+}
+
+header {
+    margin: 1rem;
+    border: solid 1px #ffffff;
+    display: flex;
+    text-align: right;
+}
+
+.nav{
+    display: flex;
+    gap: ;
+}
