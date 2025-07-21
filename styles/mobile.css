@@ -1,0 +1,59 @@
+@media screen and (max-width: 767px) {
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        font-family: sans-serif;
+        line-height: 1.4;
+        padding: 1rem;
+    }
+
+    header nav ul {
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+    }
+
+    header nav a {
+        padding: 0.5rem;
+        text-decoration: none;
+    }
+
+    #disclaimer {
+        background: #f9f9f9;
+        padding: 0.5rem;
+        margin: 1rem 0;
+    }
+
+    #products {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    .btn{
+        display: inline-block;
+        padding: .5rem 1rem; 
+        border-radius: .5rem; 
+        background-color: #000; 
+        color: #fff; 
+        cursor: pointer; 
+    }
+    .product {
+        border: 1px solid #ddd;
+        padding: 0.5rem;
+    }
+
+    .product img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    footer {
+        margin-top: 2rem;
+        text-align: center;
+        font-size: 0.9rem;
+    }
+}

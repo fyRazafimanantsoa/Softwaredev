@@ -1,0 +1,9 @@
+
+[
+  { "id": 1, "name": "Product A", "image": "https://via.placeholder.com/150", "url": "https://amazon.com/dp/ABC", "price": "$19.99", "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." },
+  { "id": 2, "name": "Product B", "image": "https://via.placeholder.com/150", "url": "https://amazon.com/dp/DEF", "price": "$29.99", "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." },
+  { "id": 3, "name": "Product C", "image": "https://via.placeholder.com/150", "url": "https://otherstore.com/item/123", "price": "$9.99", "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." },
+  { "id": 4, "name": "Product D", "image": "https://via.placeholder.com/150", "url": "https://otherstore.com/item/456", "price": "$49.99", "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." },
+  { "id": 5, "name": "Product E", "image": "https://via.placeholder.com/150", "url": "https://amazon.com/dp/GHI", "price": "$39.99", "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." },
+  { "id": 6, "name": "Product F", "image": "https://via.placeholder.com/150", "url": "https://otherstore.com/item/789", "price": "$24.99", "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." }
+]
