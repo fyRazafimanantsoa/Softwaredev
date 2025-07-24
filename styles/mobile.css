@@ -10,11 +10,17 @@
         line-height: 1.4;
         padding: 1rem;
     }
+    .containerheader{
+        background-color: #1a1336; 
+    }
 
-    header nav ul {
+    .navigation{
         display: flex;
         flex-direction: column;
         list-style: none;
+    }
+    .navigation a:hover {
+    color: #007bff;
     }
 
     header nav a {
@@ -32,6 +38,10 @@
         display: grid;
         grid-template-columns: 1fr;
         gap: 1rem;
+    }
+    .product:hover { 
+    color: #007bff;
+    transform: scale(1.02); 
     }
     .btn{
         display: inline-block;
