@@ -1,69 +1,78 @@
 @media screen and (max-width: 767px) {
     * {
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
     }
-
+  
     body {
-        font-family: sans-serif;
-        line-height: 1.4;
-        padding: 1rem;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      padding: 1rem;
+      background-color: #000;
+      color: var(--text-color);
     }
-    .containerheader{
-        background-color: #1a1336; 
+  
+    .containerheader {
+      flex-direction: column;
+      background-color: #1a1336;
     }
-
-    .navigation{
-        display: flex;
-        flex-direction: column;
-        list-style: none;
+  
+    .left-header {
+      justify-content: center;
+      gap: 0.5rem;
     }
+  
+    .navigation {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.5rem;
+    }
+  
     .navigation a:hover {
-    color: #007bff;
+      color: var(--hover-color);
     }
-
-    header nav a {
-        padding: 0.5rem;
-        text-decoration: none;
+  
+    .btn {
+      display: inline-block;
+      padding: 0.5rem 1rem;
+      border-radius: 0.5rem;
+      background-color: #000;
+      color: #fff;
+      cursor: pointer;
+      margin-bottom: 1rem;
     }
-
+  
     #disclaimer {
-        background: #f9f9f9;
-        padding: 0.5rem;
-        margin: 1rem 0;
+      background-color: #f9f9f9;
+      color: var(--text-color);
+      padding: 1rem;
+      margin: 1rem 0;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
     }
-
+  
     #products {
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 1rem;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1rem;
     }
-    .product:hover { 
-    color: #007bff;
-    transform: scale(1.02); 
-    }
-    .btn{
-        display: inline-block;
-        padding: .5rem 1rem; 
-        border-radius: .5rem; 
-        background-color: #000; 
-        color: #fff; 
-        cursor: pointer; 
-    }
+  
     .product {
-        border: 1px solid #ddd;
-        padding: 0.5rem;
+      border: 1px solid #ddd;
+      padding: 0.75rem;
+      background-color: var(--white);
+      color: var(--secondary-color);
     }
-
+  
     .product img {
-        max-width: 100%;
-        height: auto;
+      max-width: 100%;
+      height: auto;
     }
-
-    footer {
-        margin-top: 2rem;
-        text-align: center;
-        font-size: 0.9rem;
+  
+    .footer {
+      text-align: center;
+      font-size: 0.85rem;
+      padding-top: 1rem;
     }
-}
+  }
+  
