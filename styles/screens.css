@@ -83,7 +83,7 @@ a:hover {
 #introduction {
   padding: 1rem;
   margin-bottom: 2rem;
-  background-color: transparent;
+  background-color: var(--primary-color);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
