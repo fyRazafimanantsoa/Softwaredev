@@ -12,6 +12,9 @@
   box-sizing: border-box;
   color: var(--text-color);
 }
+*::hover {
+  color: var(--hover-color);
+}
 
 body {
   max-width: 100%;
@@ -89,13 +92,12 @@ a:hover {
 
 .product {
   padding: 0.75rem;
-  color: var(--secondary-color);
+  color: var(--text-color);
   transition: transform 0.2s ease-in-out;
 }
 
 .product:hover {
   transform: scale(1.03);
-  color: var(--hover-color);
 }
 
 .footer {
