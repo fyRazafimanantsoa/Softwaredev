@@ -26,9 +26,6 @@ a {
   color: var(--white);
 }
 
-a:hover {
-  color: var(--hover-color);
-}
 
 .logo {
   width: 80px;
@@ -48,6 +45,8 @@ a:hover {
   padding: 1rem;
   background-color: var(--primary-color);
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  border-top: 5px solid var(--secondary-color);
 }
 
 .containerheader h1 {
@@ -62,11 +61,21 @@ a:hover {
   margin-right: 1rem;
   transition: transform 0.2s ease-in-out;
 }
+.navigation a{
+  height: 100%;
+  width: 100%;
+  padding: 0.5rem;
+  text-align: center;
+  transition: transform 0.2s ease-in-out;
+  border-radius: 8px;
+  color: var(--text-color);
+}
 
-.navigation a::hover {
-  padding: 0.15rem 0.5rem;
-  border: 1px solid var(--secondary-color);
-  transform: scale(1.05);
+.navigation a:hover {
+  background-color: var(--white);
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  color: var(--hover-color);
 }
 
 .btn {
@@ -78,13 +87,16 @@ a:hover {
   margin: 1rem 0.5rem;
   padding: 1rem;
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
 }
 
 #introduction {
   padding: 1rem;
   margin-bottom: 2rem;
-  background-color: var(--primary-color);
+  background-color: var(--white);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+  border: 3px solid var(--secondary-color);
 }
 
 #products {
@@ -110,6 +122,7 @@ a:hover {
   text-align: center;
   padding: 1rem;
   transition: transform 0.2s ease;
+  border-top: 5px solid var(--secondary-color);
 }
 
 .product img {
@@ -133,19 +146,19 @@ a:hover {
   padding-bottom: 2rem;
 }
 
-.footer-content p {
-  max-width: 900px;
-  margin: 0 auto;
-  text-align: center;
-  line-height: 1.5;
-}
-
-
 .footer {
   background-color: var(--primary-color);
   border-top: 5px solid var(--secondary-color);
   padding: 2rem 1rem;
   color: var(--text-color);
+  border-radius: 8px;
+}
+
+.footer-content p {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 1.5;
 }
 
 .footer .title {

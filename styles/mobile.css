@@ -75,10 +75,14 @@
   }
 
   .navigation a {
+    display: block;
     color: var(--text-color);
   }
 
   .navigation a:hover {
+    background-color: var(--white);
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
     color: var(--hover-color);
   }
 
@@ -107,6 +111,11 @@
   .product img {
     max-width: 100%;
     height: auto;
+  }
+  
+  .product:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   }
 
   .footer {
