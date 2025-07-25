@@ -19,8 +19,8 @@
 body {
   max-width: 100%;
   margin: 0 auto;
-  padding: 1rem;
-  background-color: #000;
+  padding: 0.5rem;
+  background-color: grey;
   font-family: Arial, sans-serif;
 }
 
@@ -62,6 +62,17 @@ a:hover {
   display: flex;
   gap: 1.5rem;
   list-style: none;
+  margin-right: 1rem;
+  transition: transform 0.2s ease-in-out;
+}
+
+.navigation a::hover {
+  transform: scale(1.05);
+}
+
+.navigation li {
+  padding: 0.15rem 0.5rem;
+  border: 1px solid var(--secondary-color);
 }
 
 .btn {
@@ -70,7 +81,7 @@ a:hover {
 
 .container {
   background-color: var(--primary-color);
-  margin: 2rem 0;
+  margin: 1rem 0.5rem;
   padding: 1rem;
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
 }
@@ -92,12 +103,11 @@ a:hover {
 
 .product {
   padding: 0.75rem;
-  color: var(--text-color);
   transition: transform 0.2s ease-in-out;
 }
 
 .product:hover {
-  transform: scale(1.03);
+  transform: scale(1.05);
 }
 
 .footer {
