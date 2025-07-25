@@ -12,9 +12,6 @@
   box-sizing: border-box;
   color: var(--text-color);
 }
-*::hover {
-  color: var(--hover-color);
-}
 
 body {
   max-width: 100%;
@@ -67,12 +64,9 @@ a:hover {
 }
 
 .navigation a::hover {
-  transform: scale(1.05);
-}
-
-.navigation li {
   padding: 0.15rem 0.5rem;
   border: 1px solid var(--secondary-color);
+  transform: scale(1.05);
 }
 
 .btn {

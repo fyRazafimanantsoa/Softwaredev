@@ -1,4 +1,10 @@
 // app.js
+
+document.querySelector('.btn').addEventListener('click', () => {
+  const nav = document.querySelector('.navigation');
+  nav.classList.toggle('show');
+});
+
 async function fetchProducts() {
   const res = await fetch('json/products.json');
   return res.ok ? res.json() : [];
