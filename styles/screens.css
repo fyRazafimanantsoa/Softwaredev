@@ -98,7 +98,7 @@ a {
   border: 3px solid var(--secondary-color);
 }
 
-#products {
+#prodhome, #products {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
@@ -143,6 +143,12 @@ a {
 #products {
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   padding-bottom: 2rem;
+}
+.error {
+  color: red;
+  font-weight: bold;
+  text-align: center;
+  padding: 2rem;
 }
 
 .footer {

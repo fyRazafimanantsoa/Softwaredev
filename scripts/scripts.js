@@ -10,19 +10,18 @@ async function fetchProducts() {
   return res.ok ? res.json() : [];
 }
 
+// Reuse: Sanitize function
 function sanitize(str) {
   const div = document.createElement('div');
   div.textContent = str;
   return div.innerHTML;
 }
 
-function getRandomSubset(arr, count) {
-  const shuffled = arr.slice().sort(() => 0.5 - Math.random());
-  return shuffled.slice(0, count);
-}
+// Reuse: Product rendering function
+function renderProducts(products, containerId) {
+  const container = document.getElementById(containerId);
+  if (!container) return;
 
-function renderProducts(products) {
-  const container = document.getElementById('products');
   container.innerHTML = '';
   products.forEach(p => {
     const div = document.createElement('div');
@@ -38,6 +37,32 @@ function renderProducts(products) {
     container.appendChild(div);
   });
 }
+
+// Load all products and display based on page
+async function loadAllProducts() {
+  try {
+    const res = await fetch('json/products.json');
+    if (!res.ok) throw new Error('Network error');
+    const products = await res.json();
+
+    // Check which container exists and render accordingly
+    if (document.getElementById('prodhome')) {
+      renderProducts(products.slice(0, 6), 'prodhome'); // Optional: limit on home
+    } else if (document.getElementById('products')) {
+      renderProducts(products, 'products'); // Show all on products.html
+    }
+  } catch (error) {
+    console.error('Error loading products:', error);
+    const container =
+      document.getElementById('prodhome') || document.getElementById('products');
+    if (container) {
+      container.innerHTML = `<div class="error">⚠️ Failed to load products. Please try again later.</div>`;
+    }
+  }
+}
+
+document.addEventListener('DOMContentLoaded', loadAllProducts);
+
 
 function setDates() {
   document.getElementById('year').textContent = new Date().getFullYear();

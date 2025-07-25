@@ -5,5 +5,244 @@
   { "id": 3, "name": "Product C", "image": "https://via.placeholder.com/150", "url": "https://otherstore.com/item/123", "price": "$9.99", "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." },
   { "id": 4, "name": "Product D", "image": "https://via.placeholder.com/150", "url": "https://otherstore.com/item/456", "price": "$49.99", "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." },
   { "id": 5, "name": "Product E", "image": "https://via.placeholder.com/150", "url": "https://amazon.com/dp/GHI", "price": "$39.99", "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." },
-  { "id": 6, "name": "Product F", "image": "https://via.placeholder.com/150", "url": "https://otherstore.com/item/789", "price": "$24.99", "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." }
+  {
+    "id": 7,
+    "name": "Product G",
+    "image": "https://via.placeholder.com/150",
+    "url": "https://otherstore.com/item/001",
+    "price": "$19.99",
+    "description": "High-quality product designed to meet your needs with precision and efficiency."
+  },
+  {
+    "id": 8,
+    "name": "Product H",
+    "image": "https://via.placeholder.com/150",
+    "url": "https://otherstore.com/item/002",
+    "price": "$32.50",
+    "description": "Crafted with care and built to last, perfect for daily use."
+  },
+  {
+    "id": 9,
+    "name": "Product I",
+    "image": "https://via.placeholder.com/150",
+    "url": "https://otherstore.com/item/003",
+    "price": "$45.00",
+    "description": "A stylish and functional choice for modern lifestyles."
+  },
+  {
+    "id": 10,
+    "name": "Product J",
+    "image": "https://via.placeholder.com/150",
+    "url": "https://otherstore.com/item/004",
+    "price": "$27.75",
+    "description": "Versatile, dependable, and designed with simplicity in mind."
+  },
+  {
+    "id": 11,
+    "name": "Product K",
+    "image": "https://via.placeholder.com/150",
+    "url": "https://otherstore.com/item/005",
+    "price": "$13.99",
+    "description": "Lightweight yet durable, ideal for everyday tasks."
+  },
+  {
+    "id": 12,
+    "name": "Product L",
+    "image": "https://via.placeholder.com/150",
+    "url": "https://otherstore.com/item/006",
+    "price": "$55.49",
+    "description": "Premium build and performance at an affordable price."
+  },
+  {
+    "id": 13,
+    "name": "Product M",
+    "image": "https://via.placeholder.com/150",
+    "url": "https://otherstore.com/item/007",
+    "price": "$88.00",
+    "description": "Modern design that blends comfort and functionality."
+  },
+  {
+    "id": 14,
+    "name": "Product N",
+    "image": "https://via.placeholder.com/150",
+    "url": "https://otherstore.com/item/008",
+    "price": "$21.10",
+    "description": "Sleek and simple solution to everyday problems."
+  },
+  {
+    "id": 15,
+    "name": "Product O",
+    "image": "https://via.placeholder.com/150",
+    "url": "https://otherstore.com/item/009",
+    "price": "$39.90",
+    "description": "Compact and efficient tool designed to maximize results."
+  },
+  {
+    "id": 16,
+    "name": "Product P",
+    "image": "https://via.placeholder.com/150",
+    "url": "https://otherstore.com/item/010",
+    "price": "$60.00",
+    "description": "Reliable and stylish with a touch of sophistication."
+  },
+  {
+    "id": 17,
+    "name": "Product Q",
+    "image": "https://via.placeholder.com/150",
+    "url": "https://otherstore.com/item/011",
+    "price": "$14.25",
+    "description": "Simple to use, easy to love – a great addition to your home."
+  },
+  {
+    "id": 18,
+    "name": "Product R",
+    "image": "https://via.placeholder.com/150",
+    "url": "https://otherstore.com/item/012",
+    "price": "$72.30",
+    "description": "Built to exceed expectations in performance and design."
+  },
+  {
+    "id": 19,
+    "name": "Product S",
+    "image": "https://via.placeholder.com/150",
+    "url": "https://otherstore.com/item/013",
+    "price": "$28.85",
+    "description": "Crafted with the user in mind for maximum satisfaction."
+  },
+  {
+    "id": 20,
+    "name": "Product T",
+    "image": "https://via.placeholder.com/150",
+    "url": "https://otherstore.com/item/014",
+    "price": "$16.99",
+    "description": "Clean, modern, and highly effective for all environments."
+  },
+  {
+    "id": 21,
+    "name": "Product U",
+    "image": "https://via.placeholder.com/150",
+    "url": "https://otherstore.com/item/015",
+    "price": "$35.00",
+    "description": "Tested and trusted by thousands of happy customers."
+  },
+  {
+    "id": 22,
+    "name": "Product V",
+    "image": "https://via.placeholder.com/150",
+    "url": "https://otherstore.com/item/016",
+    "price": "$11.00",
+    "description": "Small package, big results – built for convenience."
+  },
+  {
+    "id": 23,
+    "name": "Product W",
+    "image": "https://via.placeholder.com/150",
+    "url": "https://otherstore.com/item/017",
+    "price": "$42.50",
+    "description": "An upgrade to your daily routine at a friendly price."
+  },
+  {
+    "id": 24,
+    "name": "Product X",
+    "image": "https://via.placeholder.com/150",
+    "url": "https://otherstore.com/item/018",
+    "price": "$25.00",
+    "description": "Compact, easy to store, and efficient to use."
+  },
+  {
+    "id": 25,
+    "name": "Product Y",
+    "image": "https://via.placeholder.com/150",
+    "url": "https://otherstore.com/item/019",
+    "price": "$29.99",
+    "description": "Ideal for gifting or personal use, offering true value."
+  },
+  {
+    "id": 26,
+    "name": "Product Z",
+    "image": "https://via.placeholder.com/150",
+    "url": "https://otherstore.com/item/020",
+    "price": "$48.10",
+    "description": "Technologically advanced and user-friendly."
+  },
+  {
+    "id": 27,
+    "name": "Product AA",
+    "image": "https://via.placeholder.com/150",
+    "url": "https://otherstore.com/item/021",
+    "price": "$18.50",
+    "description": "Economical without compromising quality."
+  },
+  {
+    "id": 28,
+    "name": "Product AB",
+    "image": "https://via.placeholder.com/150",
+    "url": "https://otherstore.com/item/022",
+    "price": "$37.77",
+    "description": "Delivers exceptional performance for its size."
+  },
+  {
+    "id": 29,
+    "name": "Product AC",
+    "image": "https://via.placeholder.com/150",
+    "url": "https://otherstore.com/item/023",
+    "price": "$22.25",
+    "description": "Minimalist design with maximum impact."
+  },
+  {
+    "id": 30,
+    "name": "Product AD",
+    "image": "https://via.placeholder.com/150",
+    "url": "https://otherstore.com/item/024",
+    "price": "$67.89",
+    "description": "A product you can rely on for quality and endurance."
+  },
+  {
+    "id": 31,
+    "name": "Product AE",
+    "image": "https://via.placeholder.com/150",
+    "url": "https://otherstore.com/item/025",
+    "price": "$20.00",
+    "description": "Fits your lifestyle and budget perfectly."
+  },
+  {
+    "id": 32,
+    "name": "Product AF",
+    "image": "https://via.placeholder.com/150",
+    "url": "https://otherstore.com/item/026",
+    "price": "$33.33",
+    "description": "Smart, stylish, and suitable for all occasions."
+  },
+  {
+    "id": 33,
+    "name": "Product AG",
+    "image": "https://via.placeholder.com/150",
+    "url": "https://otherstore.com/item/027",
+    "price": "$15.95",
+    "description": "Helps you stay productive and efficient."
+  },
+  {
+    "id": 34,
+    "name": "Product AH",
+    "image": "https://via.placeholder.com/150",
+    "url": "https://otherstore.com/item/028",
+    "price": "$26.45",
+    "description": "Clean, intuitive, and easy to integrate."
+  },
+  {
+    "id": 35,
+    "name": "Product AI",
+    "image": "https://via.placeholder.com/150",
+    "url": "https://otherstore.com/item/029",
+    "price": "$49.99",
+    "description": "Combines technology and design seamlessly."
+  },
+  {
+    "id": 36,
+    "name": "Product AJ",
+    "image": "https://via.placeholder.com/150",
+    "url": "https://otherstore.com/item/030",
+    "price": "$34.50",
+    "description": "Your go-to product for smart daily living."
+  }
 ]

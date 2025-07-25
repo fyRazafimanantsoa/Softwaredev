@@ -112,12 +112,17 @@
     max-width: 100%;
     height: auto;
   }
-  
+
   .product:hover {
     transform: translateY(-5px);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   }
-
+  .error {
+    color: red;
+    font-weight: bold;
+    text-align: center;
+    padding: 2rem;
+  }
   .footer {
     text-align: center;
     font-size: 0.85rem;
