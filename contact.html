@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>Contact | AllInUs</title>
+  <link rel="stylesheet" href="styles/mobile.css" media="(max-width: 767px)" />
+  <link rel="stylesheet" href="styles/screens.css" media="(min-width: 768px)" />
+  <script src="scripts/scripts.js" defer></script>
+</head>
+<body>
+  <header class="containerheader">
+    <a href="allinus.html">
+      <div class="left-header">
+        <img class="logo" src="images/a.i.u.png" alt="All In Us logo" />
+        <h1>AllInUs</h1>
+      </div>
+    </a>
+    <nav class="main-navigation">
+      <button class="btn">≡</button>
+      <ul class="navigation">
+        <li><a href="allinus.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h2 class="prodtitle">Contact Us</h2>
+    <p>If you have questions, suggestions, or feedback, don’t hesitate to reach out. We’d love to hear from you!</p>
+    <form class="contact-form">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <button type="submit">Send</button>
+    </form>
+  </main>
+
+  <footer class="footer">
+    <h1 class="title">AllInUs</h1>
+    <div class="footer-content">
+      <p>Disclaimer: AllInUs acts as a path between you and third-party stores. We do not endorse, guarantee, or take responsibility for listed products.</p>
+      <p>Owner: AllInUs</p>
+      <p>&copy; <span id="year"></span> AllInUs. Last modified: <span id="lastModified"></span> All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>

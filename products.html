@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>Products | AllInUs</title>
+  <link rel="stylesheet" href="styles/mobile.css" media="(max-width: 767px)" />
+  <link rel="stylesheet" href="styles/screens.css" media="(min-width: 768px)" />
+  <script src="scripts/scripts.js" defer></script>
+</head>
+<body>
+  <header class="containerheader">
+    <a href="allinus.html">
+      <div class="left-header">
+        <img class="logo" src="images/a.i.u.png" alt="All In Us logo" />
+        <h1>AllInUs</h1>
+      </div>
+    </a>
+    <nav class="main-navigation">
+      <button class="btn">≡</button>
+      <ul class="navigation">
+        <li><a href="allinus.html">Home</a></li>
+        <li><a href="products.html" class="active">Products</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h2 class="prodtitle">Explore Our Products</h2>
+    <p>Browse through our curated selection of high-quality, best-deal products from trusted platforms like Amazon and more.</p>
+
+    <div id="filters">
+      <!-- You can later use JS to populate this with dynamic filters -->
+      <input type="text" id="search" placeholder="Search products..." />
+      <select id="sort">
+        <option value="default">Sort by</option>
+        <option value="low-high">Price: Low to High</option>
+        <option value="high-low">Price: High to Low</option>
+      </select>
+    </div>
+
+    <div id="products"></div>
+  </main>
+
+  <footer class="footer">
+    <h1 class="title">AllInUs</h1>
+    <div class="footer-content">
+      <p>Disclaimer: AllInUs acts as a path between you and third-party stores. We do not endorse, guarantee, or take responsibility for listed products.</p>
+      <p>Owner: AllInUs</p>
+      <p>&copy; <span id="year"></span> AllInUs. Last modified: <span id="lastModified"></span> All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
