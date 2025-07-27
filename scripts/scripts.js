@@ -75,3 +75,4 @@ document.addEventListener('DOMContentLoaded', async () => {
   const subset = getRandomSubset(all, Math.floor(Math.random() * 4) + 3);
   renderProducts(subset);
 });
+

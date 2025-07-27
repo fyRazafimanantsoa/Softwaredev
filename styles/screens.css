@@ -151,6 +151,16 @@ a {
   padding: 2rem;
 }
 
+.contact-form {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.field {
+  margin-bottom: 10px;
+  background-color: var(--white);
+}
 .footer {
   background-color: var(--primary-color);
   border-top: 5px solid var(--secondary-color);
