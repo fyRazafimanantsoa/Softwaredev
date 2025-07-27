@@ -154,12 +154,33 @@ a {
 .contact-form {
   display: flex;
   flex-direction: column;
-
+  width: 100%;
+  max-width: 85%;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: var(--white);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .field {
   margin-bottom: 10px;
   background-color: var(--white);
+}
+
+.btnsend{
+  background-color: var(--secondary-color);
+  color: var(--white);
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-left: 25%;
+  transition: background-color 0.3s ease;
+  align-items: center;
 }
 .footer {
   background-color: var(--primary-color);
