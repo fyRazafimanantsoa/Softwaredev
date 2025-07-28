@@ -17,7 +17,7 @@ body {
   max-width: 100%;
   margin: 0 auto;
   padding: 0.5rem;
-  background-color: var(--text-color);
+  background-color: var(--white);
   font-family: Arial, sans-serif;
 }
 
@@ -155,7 +155,7 @@ a {
   display: flex;
   flex-direction: column;
   width: 100%;
-  max-width: 85%;
+  max-width: 90%;
   margin: 0 auto;
   padding: 20px;
   border-radius: 10px;
@@ -180,6 +180,7 @@ a {
   margin-top: 10px;
   margin-left: 25%;
   transition: background-color 0.3s ease;
+  width: 25%;
   align-items: center;
 }
 .footer {
