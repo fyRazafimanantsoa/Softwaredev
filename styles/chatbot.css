@@ -1,0 +1,192 @@
+:root {
+    --primary-color: #d4e1d8;
+    --secondary-color: #6b8773;
+    --text-color: #000000;
+    --white: #ffffff;
+    --hover-color: #55715f; /* Adjusted a bit darker for better contrast */
+  }
+  
+  /* General Chatbot Container - fixed position at bottom right */
+  .chatbot-container {
+      position: fixed;
+      bottom: 30px; /* Position at bottom */
+      right: 30px; /* Position at right */
+      z-index: 9999;
+      /* This container will hold both the toggler and the chatbox,
+         positioning them absolutely relative to itself. */
+  }
+  
+  /* Chatbot Toggler Button - initially visible */
+  .chatbot-toggler {
+      background-color: var(--secondary-color);
+      color: var(--white);
+      border: none;
+      border-radius: 25px;
+      padding: 10px 20px;
+      cursor: pointer;
+      font-size: 16px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      transition: opacity 0.3s ease, transform 0.3s ease;
+      opacity: 1; /* Initially visible */
+      pointer-events: auto; /* Initially clickable */
+      position: relative; /* Position relative to .chatbot-container */
+      z-index: 10; /* Ensure it's above the box when hidden/inactive */
+  }
+  
+  .chatbot-toggler:hover {
+      background-color: var(--hover-color);
+  }
+  
+  /* Chatbox - initially hidden and positioned to overlap toggler */
+  .chatbot-box {
+      background-color: var(--white);
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+      width: 350px;
+      height: 450px;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      transform: scale(0.5); /* Smaller when hidden */
+      opacity: 0; /* Hidden */
+      pointer-events: none; /* Not interactive when hidden */
+      transition: transform 0.3s ease, opacity 0.3s ease;
+      transform-origin: bottom right; /* Scale from bottom right */
+      position: absolute; /* Position relative to .chatbot-container */
+      bottom: 0;
+      right: 0;
+      z-index: 5; /* Behind toggler initially */
+  }
+  
+  /* When chatbot-container has 'show-chatbot' class (meaning chatbox is active) */
+  .chatbot-container.show-chatbot .chatbot-toggler {
+      opacity: 0; /* Hide the toggler */
+      pointer-events: none; /* Make it unclickable */
+      transform: scale(0.8); /* Shrink slightly as it fades out */
+  }
+  
+  .chatbot-container.show-chatbot .chatbot-box {
+      transform: scale(1); /* Scale up to full size */
+      opacity: 1; /* Fully visible */
+      pointer-events: auto; /* Interactive */
+      z-index: 15; /* Bring to front when visible */
+  }
+  
+  /* Chatbox Header */
+  .chatbot-header {
+      background-color: var(--secondary-color);
+      color: var(--white);
+      padding: 15px;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  }
+  
+  .chatbot-header h2 {
+      margin: 0;
+      font-size: 18px;
+  }
+  
+  .close-btn {
+      background: none;
+      border: none;
+      color: var(--white);
+      font-size: 24px;
+      cursor: pointer;
+  }
+  
+  /* Chatbox Content Area */
+  .chatbox {
+      flex-grow: 1;
+      padding: 15px;
+      overflow-y: auto;
+      list-style: none;
+      margin: 0;
+      background-color: var(--primary-color);
+  }
+  
+  .chatbox::-webkit-scrollbar {
+      width: 8px;
+  }
+  
+  .chatbox::-webkit-scrollbar-thumb {
+      background-color: #ccc;
+      border-radius: 4px;
+  }
+  
+  /* Individual Chat Messages */
+  .chat {
+      display: flex;
+      margin-bottom: 10px;
+  }
+  
+  .chat p {
+      padding: 10px 15px;
+      border-radius: 15px;
+      max-width: 70%;
+      word-wrap: break-word;
+      color: var(--text-color);
+  }
+  
+  .incoming p {
+      background-color: var(--white); /* AI message background */
+      color: var(--text-color);
+      border-bottom-left-radius: 0;
+  }
+  
+  .outgoing {
+      justify-content: flex-end;
+  }
+  
+  .outgoing p {
+      background-color: var(--secondary-color); /* User message background */
+      color: var(--white);
+      border-bottom-right-radius: 0;
+  }
+  
+  /* Chat Input Area */
+  .chat-input {
+      display: flex;
+      padding: 15px;
+      border-top: 1px solid var(--primary-color); /* Light border */
+      background-color: var(--white);
+  }
+  
+  .chat-input input {
+      flex-grow: 1;
+      border: 1px solid var(--primary-color); /* Input border */
+      border-radius: 20px;
+      padding: 10px 15px;
+      font-size: 14px;
+      margin-right: 10px;
+      color: var(--text-color);
+  }
+  
+  .chat-input button {
+      background-color: var(--secondary-color);
+      color: var(--white);
+      border: none;
+      border-radius: 20px;
+      padding: 10px 15px;
+      cursor: pointer;
+      font-size: 14px;
+  }
+  
+  .chat-input button:hover {
+      background-color: var(--hover-color);
+  }
+  
+  /* Mobile Responsiveness (Adjust as needed for your existing styles) */
+  @media (max-width: 767px) {
+      .chatbot-container {
+          bottom: 20px;
+          right: 20px;
+      }
+  
+      .chatbot-box {
+          width: 90vw; /* Adjust for smaller screens */
+          height: 70vh;
+      }
+  }

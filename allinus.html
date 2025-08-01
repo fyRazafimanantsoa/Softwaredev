@@ -6,7 +6,9 @@
   <title>AllInUs</title>
   <link rel="stylesheet" href="styles/mobile.css" media="(max-width: 767px)">
   <link rel="stylesheet" href="styles/screens.css" media="(min-width: 768px)">
+  <link rel="stylesheet" href="styles/chatbot.css">
   <script src="scripts/scripts.js" defer></script>
+  <script src="scripts/chatbot.js" defer></script>
 </head>
 <body>
   <header class="containerheader">
@@ -50,7 +52,24 @@
       <div id="prodhome"></div> 
     </section>
   </main>
-
+  <div class="chatbot-container" id="chatbot-container">
+    <button class="chatbot-toggler" id="chatbot-toggler">Chat with AI</button>
+    <div class="chatbot-box" id="chatbot-box">
+        <div class="chatbot-header">
+            <h2>AI Assistant</h2>
+            <button class="close-btn" id="close-chatbot">&times;</button>
+        </div>
+        <ul class="chatbox" id="chatbox">
+            <li class="chat incoming">
+                <p>Hello! How can I help you today?</p>
+            </li>
+        </ul>
+        <div class="chat-input">
+            <input type="text" id="chat-input" placeholder="Enter your message...">
+            <button id="send-btn">Send</button>
+        </div>
+    </div>
+  </div>
   <footer class="footer">
     <h1 class="title">AllInUs</h1>
     <div class="footer-content">
